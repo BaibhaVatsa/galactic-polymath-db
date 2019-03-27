@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title>Galactic-Polymath Database</title>
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+	</head>
+	<body>
+
+<h1>Research Dataset Database</h1>
+<p>You can use the search bar to look for datasets.</p>
+
+<div class="container">
+      <fieldset>
+        <form action="/" method="post">
+          <input name="dataset" type="text" class="ghost-input" placeholder="Enter the dataset" required>
+          <input type="submit" class="ghost-button" value="Search">
+        </form>
+      </fieldset>
+</div>
+	
+<table class="blueTable">
+	<thead>
+		<tr>
+			<% Object.keys(results[0]).forEach(function(cols){ %>
+				<th><%= cols %></th>
+			<% }); %>
+		</tr>
+	</thead>
+	<tbody>
+		<% results.forEach(function(row){ %>
+			<tr>
+				<% Object.values(row).forEach(function(data){ %>
+					<td><%= data %></td>
+				<% }); %>
+			</tr>
+		<% }); %>
+	</tbody>
+</table>
+
+</body>
+</html> 

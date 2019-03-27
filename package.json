@@ -1,0 +1,32 @@
+{
+  "name": "galactic-polymath-db",
+  "version": "1.0.0",
+  "description": "web application for galactic-polymath",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BaibhaVatsa/galactic-polymath-db.git"
+  },
+  "keywords": [
+    "education",
+    "research",
+    "articles",
+    "database"
+  ],
+  "author": "Arda Turkmen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BaibhaVatsa/galactic-polymath-db/issues"
+  },
+  "homepage": "https://github.com/BaibhaVatsa/galactic-polymath-db#readme",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "python-shell": "^1.0.7"
+  }
+}
